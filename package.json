@@ -5,13 +5,15 @@
   "scripts": {
     "build-storybook": "cross-env STORYBOOK_DISPLAY_WARNING=true DISPLAY_WARNING=true build-storybook -c ./",
     "debug": "cross-env NODE_OPTIONS=--inspect-brk STORYBOOK_DISPLAY_WARNING=true DISPLAY_WARNING=true start-storybook -p 9011 -c ./",
-    "storybook": "cross-env STORYBOOK_DISPLAY_WARNING=true DISPLAY_WARNING=true start-storybook -p 9011 -c ./ --no-manager-cache"
+    "storybook": "cross-env STORYBOOK_DISPLAY_WARNING=true DISPLAY_WARNING=true start-storybook -p 9011 -c ./ --no-manager-cache",
+    "clear": "rimraf ./node_modules"
   },
   "dependencies": {
     "formik": "^2.2.9",
     "prop-types": "15.7.2",
     "react": "16.14.0",
     "react-dom": "16.14.0"
+
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
